@@ -40,11 +40,11 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _add_alpha: 0
-    - _blend_opacity: 1.44
+    - _add_alpha: 0.02
+    - _blend_opacity: 1
     - _blend_sharpness: 0
-    - _divide_color: 1
-    - _fresnel_power: 0.6
-    - _noise_sub: 0.6
+    - _divide_color: 4
+    - _fresnel_power: 4.17
+    - _noise_sub: 0.706
     m_Colors: []
   m_BuildTextureStacks: []
