@@ -5588,14 +5588,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4154716206490823147, guid: 53fc9a928a61f014da6a9d3c283ffc1e, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9d8b9faf332a4c4ca5f3974419eb69c, type: 2}
-    - target: {fileID: 5171757546430412840, guid: 53fc9a928a61f014da6a9d3c283ffc1e, type: 3}
-      propertyPath: lookAction.m_Name
-      value: Look
-      objectReference: {fileID: 0}
     - target: {fileID: 6836393162966001943, guid: 53fc9a928a61f014da6a9d3c283ffc1e, type: 3}
       propertyPath: m_Name
       value: Player3D
