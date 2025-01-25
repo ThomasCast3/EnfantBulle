@@ -18,6 +18,7 @@ public class PlayerController3d : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer; 
     public float mouseSensitivity = 100f;
+    private float rotationX = 0f;
 
     void Start()
     {
@@ -39,13 +40,12 @@ public class PlayerController3d : MonoBehaviour
         
         Vector3 velocity = new Vector3(moveDirection.x * playerSpeed, rb.velocity.y, moveDirection.z * playerSpeed);
         rb.velocity = velocity;
-        
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
         if(jumpAction.ReadValue<float>() > 0.1 && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
         }
-
     }
 
     private void OnDrawGizmos()

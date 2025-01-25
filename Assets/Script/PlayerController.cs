@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck; 
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer; 
-
     
     void Start()
     {
