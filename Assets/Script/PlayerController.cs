@@ -10,6 +10,12 @@ public class PlayerController : MonoBehaviour
     public InputAction jumpAction;
     public float jumpForce = 10f;
     public Rigidbody2D rb;
+    public bool isGrounded = false;
+
+    public Transform groundCheck; 
+    public float groundCheckRadius = 0.2f;
+    public LayerMask groundLayer; 
+
     
     void Start()
     {
@@ -21,9 +27,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(moveValue.ReadValue<Vector2>().x * playerSpeed, rb.velocity.y);
-        if(jumpAction.ReadValue<float>() > 0.1  )
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        if(jumpAction.ReadValue<float>() > 0.1 && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+        Debug.LogWarning(rb.velocity.y);
     }
 }
