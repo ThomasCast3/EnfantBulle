@@ -364,7 +364,9 @@ MonoBehaviour:
   - {fileID: 1730782403564300, guid: 10b8a4c30cc76f545b16b1293c04284a, type: 3}
   - {fileID: 1827786194614610, guid: 5f84cb4a2a24a2f45aefb6692253dcee, type: 3}
   - {fileID: 1900630249815662, guid: b2668a24846f992448b0a41435504534, type: 3}
-  wordToBuild: tu
+  wordToBuild: "Un supermarch\xE9 sans fin, o\xF9 chaque rayon semble s\u2019\xE9tirer
+    vers l\u2019infini, il existe un tr\xE9sor\u202F: l\xE0 o\xF9 le nettoyage commence.
+    Au milieu de ce chaos organis\xE9, quelque part dans un recoin oubli\xE9."
   letterSpacing: 0.5
   parentTransform: {fileID: 0}
   savePath: Assets/Prefabs/Lettre
