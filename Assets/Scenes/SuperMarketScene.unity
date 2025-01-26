@@ -32299,6 +32299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Base_Stairs_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1146702334226010, guid: b4c717f745c8669489e14c516cd58205, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4122973952808964, guid: b4c717f745c8669489e14c516cd58205, type: 3}
       propertyPath: m_LocalScale.x
       value: 143.61742
