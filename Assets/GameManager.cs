@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     private bool isTimerRunning = false;
     public portail3D portail3D;
     public static GameManager Instance { get; private set; }
+    public GameObject victoryScreen;
+    public GameObject gameOverScreen;
 
     public void Awake(){
         if (Instance  != null && Instance != this)
@@ -27,6 +30,11 @@ public class GameManager : MonoBehaviour
 
     public void IncrementTimer(float increment){
         currentTimer+=increment;
+        UpdateTimerText();
+    }
+
+    public void DecrementTimer(float decrement){
+        currentTimer -= decrement;
         UpdateTimerText();
     }
 
@@ -67,10 +75,15 @@ public class GameManager : MonoBehaviour
     public void StopTimer()
     {
         isTimerRunning = false;
+        gameOverScreen.SetActive(true);
     }
 
     public void StartTimer()
     {
         isTimerRunning = true;
+    }
+
+    public void returnMenu(){
+        SceneManager.LoadScene(4);
     }
 }
