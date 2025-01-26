@@ -12,6 +12,7 @@ public class portail3D : MonoBehaviour
     public GameObject parent;
     public Transform nextSpawnPoint;
     public Scene current3DScene;
+    public GameObject transition;
     
     public void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
@@ -21,7 +22,7 @@ public class portail3D : MonoBehaviour
             tpEvent.Invoke();
         }
     }
-    
+
     public void LoadScene(int scene)
     {
         StartCoroutine(ModeScene3D(scene));
@@ -29,6 +30,7 @@ public class portail3D : MonoBehaviour
 
     public IEnumerator ModeScene3D(int scene){
         yield return new WaitForSeconds(0.5f);
+        transition.SetActive(true);
         scene2D.SetActive(false);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         asyncOperation.completed += (operation) =>

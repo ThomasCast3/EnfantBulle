@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 public class MenuManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -18,11 +22,16 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("Start Game");
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quit Game");
+        #if UNITY_EDITOR
+        // Arrête le mode de jeu dans l'éditeur
+            EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 }

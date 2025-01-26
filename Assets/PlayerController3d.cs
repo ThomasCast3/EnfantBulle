@@ -18,7 +18,6 @@ public class PlayerController3d : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer; 
     public float mouseSensitivity = 100f;
-    private float rotationX = 0f;
 
     void Start()
     {
