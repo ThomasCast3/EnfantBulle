@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        Debug.LogWarning(other.name);
         if(other.CompareTag("Player")){
             GameManager.Instance.IncrementTimer(soapAmount);
             gameObject.SetActive(false);

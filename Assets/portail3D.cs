@@ -12,7 +12,7 @@ public class portail3D : MonoBehaviour
     public GameObject parent;
     public Transform nextSpawnPoint;
     public Scene current3DScene;
-    public GameObject transition;
+    //public GameObject transition;
     
     public void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
@@ -30,7 +30,7 @@ public class portail3D : MonoBehaviour
 
     public IEnumerator ModeScene3D(int scene){
         yield return new WaitForSeconds(0.5f);
-        transition.SetActive(true);
+      //  transition.SetActive(true);
         scene2D.SetActive(false);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         asyncOperation.completed += (operation) =>
@@ -41,7 +41,15 @@ public class portail3D : MonoBehaviour
     }
 
     public void ModeScene2D(){
-        SceneManager.UnloadSceneAsync(current3DScene);
+        if(current3DScene.isLoaded){
+            Debug.LogWarning("scene: " + current3DScene.name);
+            SceneManager.UnloadSceneAsync(current3DScene);
+
+        }else{
+            Debug.LogWarning("index: " + GameManager.Instance.current3DScene);
+            current3DScene = SceneManager.GetSceneByBuildIndex(GameManager.Instance.current3DScene);
+            SceneManager.UnloadSceneAsync(current3DScene);
+        }
 
     }
 }

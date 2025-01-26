@@ -5,10 +5,12 @@ using UnityEngine;
 public class sceneManager : MonoBehaviour
 {
     public float sceneTimer = 0f;
+    public int sceneIndex = 0;
+
     
     void Start()
     {
-        
+        GameManager.Instance.current3DScene = sceneIndex;
     }
 
     // Update is called once per frame

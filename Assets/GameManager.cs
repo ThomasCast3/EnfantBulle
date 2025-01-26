@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public GameObject victoryScreen;
     public GameObject gameOverScreen;
+    public int current3DScene;
 
     public void Awake(){
         if (Instance  != null && Instance != this)
