@@ -5482,6 +5482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: savon (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7017,6 +7021,10 @@ PrefabInstance:
     - target: {fileID: 2189063145619102625, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
       propertyPath: m_Name
       value: savon (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8949,6 +8957,10 @@ PrefabInstance:
     - target: {fileID: 2189063145619102625, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
       propertyPath: m_Name
       value: savon (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14370,6 +14382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: savon (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15802,6 +15818,10 @@ PrefabInstance:
     - target: {fileID: 2189063145619102625, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
       propertyPath: m_Name
       value: savon (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17297,6 +17317,10 @@ PrefabInstance:
     - target: {fileID: 3134619194654454002, guid: 527052747d5d1de4a837bc36c49d28af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899644659203543315, guid: 527052747d5d1de4a837bc36c49d28af, type: 3}
+      propertyPath: soapAmount
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19591,6 +19615,10 @@ PrefabInstance:
     - target: {fileID: 2189063145619102625, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
       propertyPath: m_Name
       value: savon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27025,6 +27053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: savon (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28513,6 +28545,10 @@ PrefabInstance:
     - target: {fileID: 2189063145619102625, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
       propertyPath: m_Name
       value: savon (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910948817155514080, guid: 525ba465ea1829146b11ffa49be1f04b, type: 3}
+      propertyPath: soapAmount
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
