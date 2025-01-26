@@ -15,18 +15,20 @@ public class portail3D : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
-            tpEvent.Invoke();
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
             rb.MovePosition(nextSpawnPoint.position);
             rb.velocity = Vector2.zero;
+            tpEvent.Invoke();
         }
     }
+    
     public void LoadScene(int scene)
     {
-        ModeScene3D(scene);
+        StartCoroutine(ModeScene3D(scene));
     }
 
-    public void  ModeScene3D(int scene){
+    public IEnumerator ModeScene3D(int scene){
+        yield return new WaitForSeconds(0.5f);
         scene2D.SetActive(false);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         asyncOperation.completed += (operation) =>

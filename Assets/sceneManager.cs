@@ -18,6 +18,7 @@ public class sceneManager : MonoBehaviour
         if(sceneTimer >= 30){
             Debug.LogWarning("fin timer zone");
             GameManager.Instance.portail3D.scene2D.SetActive(true);
+            GameManager.Instance.portail3D.ModeScene2D();
         }
     }
 }
